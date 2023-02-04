@@ -1,0 +1,128 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(235, 178, 132);
+  justify-content: center;
+  font-family: 'Quicksand','Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+  color: rgb(91, 91, 91);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: max(91px, 1fr) 3fr 1rem;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-content: center;
+  background-color: rgb(235, 178, 132);
+  padding: 0% 12% 1%;
+}
+
+header {
+  grid-row: 1/span 1;
+  grid-column: 1/span 3;
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  grid-row: 2/span 1;
+  grid-column: 1/span 1;
+  background-color: rgb(255, 255, 240);
+}
+
+nav h2{
+  padding-inline-start: 40px;
+}
+
+nav li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+nav li a {
+  text-decoration: none;
+  color: #4040409e;
+}
+
+.break{
+  margin-bottom: 2rem;
+}
+
+main {
+  grid-row: 2/span 1;
+  grid-column: 2/span 1;
+  background-color:rgb(255, 255, 240);
+  padding: 0 5% 2vh;
+}
+
+main article {
+  display: inline-block;
+}
+
+main article h1 {
+  color: white;
+  font-size: 2rem;
+  background-color: rgb(222, 128, 60);
+}
+main article img:not(.icon) {
+  float: right;
+  margin-left: 1rem;
+  width: 33%;
+}
+main article h2 {
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgb(235, 178, 132);
+}
+
+main article p {
+  text-align: left;
+  justify-content: center;
+}
+
+.comments {
+  grid-row: 2/span 1;
+  grid-column: 3/span 1;
+  background-color:rgb(255, 255, 240);
+  padding-right: 3rem;
+}
+.comments q {
+  color: rgb(235, 178, 132);
+}
+
+q:before { 
+  content: open-quote;
+  font-weight: 600;
+  font-size:1.5rem;
+} 
+q:after { 
+  content: close-quote;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h1, h2 {
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+
+footer {
+  background-color: rgb(222, 128, 60);
+  grid-row: 3/span 1;
+  grid-column: 1/span 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+footer address {
+  color: rgb(255, 255, 240);
+  font-style: normal;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 240);
+}
